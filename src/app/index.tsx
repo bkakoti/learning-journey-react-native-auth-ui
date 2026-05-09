@@ -1,5 +1,6 @@
 import React from 'react'
 import {
+  Alert,
   Image,
   KeyboardAvoidingView, Platform,
   Pressable,
@@ -119,38 +120,47 @@ const LoginScreen = () => {
 
 
           <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', margin: 20, gap: 20, }}>
-            <Image
-              source={require("@/assets/images/social/facebook-brands-solid.png")}
-              style={{
-                width: 50,
-                height: 50,
-              }}
-            />
-            <Image
-              source={require("@/assets/images/social/google-brands-solid.png")}
-              style={{
-                width: 50,
-                height: 50,
-              }}
-            />
-            <Image
-              source={require("@/assets/images/social/instagram-brands-solid.png")}
-              style={{
-                width: 50,
-                height: 50,
-              }}
-            />
+            <Pressable onPress={() => Alert.alert("Facebook Login")}>
+              <Image
+                source={require("@/assets/images/social/facebook-brands-solid.png")}
+                style={{
+                  width: 50,
+                  height: 50,
+                }}
+              />
+            </Pressable>
+            <Pressable onPress={() => Alert.alert("Google Login")}>
+              <Image
+                source={require("@/assets/images/social/google-brands-solid.png")}
+                style={{
+                  width: 50,
+                  height: 50,
+                }}
+              />
+            </Pressable>
+            <Pressable onPress={() => Alert.alert("Instagram Login")}>
+              <Image
+                source={require("@/assets/images/social/instagram-brands-solid.png")}
+                style={{
+                  width: 50,
+                  height: 50,
+                }}
+              />
+            </Pressable>
           </View>
 
           <View style={{ flexDirection: 'column', alignItems: 'center', justifyContent: 'center', margin: 20 }}>
 
-            <Text style={{ color: "black", fontWeight: "bold", fontSize: 16 }}>Don't have an account yet?
-              <Text style={{ color: "green", fontWeight: "bold", fontSize: 16 }}> Sign Up</Text>
+            <Text style={{ color: "black", fontWeight: "bold", fontSize: 16 }}>Don't have an account yet?{" "}
+              <Text onPress={() => Alert.alert("Go to Sign Up")}
+                style={{ color: "green", fontWeight: "bold", fontSize: 16 }}>Sign Up</Text>
             </Text>
 
-            <Text style={{ color: "green", fontWeight: "bold", fontSize: 16 }}>
-              Forgot your password?
-            </Text>
+            <Pressable onPress={() => console.log("Forgot your password")}>
+              <Text style={{ color: "green", fontWeight: "bold", fontSize: 16 }}>
+                Forgot your password?
+              </Text>
+            </Pressable>
           </View>
 
         </View>
