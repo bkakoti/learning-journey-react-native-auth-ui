@@ -1,3 +1,49 @@
+# Authentication UI Clone
+
+A clean and responsive authentication UI built using React Native and Expo.
+
+## App Screenshot
+
+![Login Screen](./LoginScreen.png)
+
+---
+
+## Run Project
+
+### 1. Install Dependencies
+
+```bash
+npm install
+```
+
+### 2. Start the App
+
+```bash
+npx expo start
+```
+
+### Start with Tunnel Mode
+
+```bash
+npx expo start --tunnel
+```
+
+For tunneling setup and information:  
+https://docs.expo.dev/more/expo-cli/
+
+---
+
+## References
+
+- Expo Docs: https://docs.expo.dev/
+- React Native Docs: https://reactnative.dev/
+- UI Inspiration: https://dribbble.com/shots/24783022-osler-AI-Telehealth-Telemedicine-App-Sign-In-Sign-Up-UI
+
+
+
+
+# Expo Default Docs here
+
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).

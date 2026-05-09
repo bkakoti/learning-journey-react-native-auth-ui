@@ -63,7 +63,7 @@ const LoginScreen = () => {
               placeholder="example@email.com"
               style={{
                 flex: 1,
-                paddingVertical: 14,
+                paddingVertical: 16,
                 fontSize: 16,
               }}
             />
@@ -97,7 +97,7 @@ const LoginScreen = () => {
               secureTextEntry
               style={{
                 flex: 1,
-                paddingVertical: 14,
+                paddingVertical: 16,
                 fontSize: 16,
               }}
             />
@@ -120,7 +120,12 @@ const LoginScreen = () => {
 
 
           <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', margin: 20, gap: 20, }}>
-            <Pressable onPress={() => Alert.alert("Facebook Login")}>
+            <Pressable onPress={() => Alert.alert("Facebook Login")}
+              style={{
+                borderRadius: 20,
+                borderWidth: 1,
+                borderColor: '#000',
+              }}>
               <Image
                 source={require("@/assets/images/social/facebook-brands-solid.png")}
                 style={{
@@ -129,7 +134,12 @@ const LoginScreen = () => {
                 }}
               />
             </Pressable>
-            <Pressable onPress={() => Alert.alert("Google Login")}>
+            <Pressable onPress={() => Alert.alert("Google Login")}
+              style={{
+                borderRadius: 20,
+                borderWidth: 1,
+                borderColor: '#000',
+              }}>
               <Image
                 source={require("@/assets/images/social/google-brands-solid.png")}
                 style={{
@@ -138,7 +148,12 @@ const LoginScreen = () => {
                 }}
               />
             </Pressable>
-            <Pressable onPress={() => Alert.alert("Instagram Login")}>
+            <Pressable onPress={() => Alert.alert("Instagram Login")}
+              style={{
+                borderRadius: 20,
+                borderWidth: 1,
+                borderColor: '#000',
+              }}>
               <Image
                 source={require("@/assets/images/social/instagram-brands-solid.png")}
                 style={{
