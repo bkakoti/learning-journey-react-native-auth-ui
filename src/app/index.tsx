@@ -46,7 +46,7 @@ const LoginScreen = () => {
               borderColor: '#ddd',
               borderRadius: 10,
               paddingHorizontal: 15,
-              marginBlock: 12,
+              marginVertical: 12,
             }}
           >
             <Image
@@ -79,7 +79,7 @@ const LoginScreen = () => {
               borderColor: '#ddd',
               borderRadius: 10,
               paddingHorizontal: 15,
-              marginBlock: 12,
+              marginVertical: 12,
             }}
           >
             <Image
@@ -103,7 +103,7 @@ const LoginScreen = () => {
             />
           </View>
 
-          <View style={{ marginBlock: 20 }}>
+          <View style={{ marginVertical: 20 }}>
             <Pressable
               style={{
                 backgroundColor: "green",
